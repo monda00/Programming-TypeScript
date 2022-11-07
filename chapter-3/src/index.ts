@@ -37,3 +37,64 @@ let d_bi = a_bi < 1234
 let f_bi: bigint = 100n
 let g_bi: 100n = 100n
 //let h_bi: bigint = 100
+
+// string
+let a_st = 'hello'
+var b_st = 'billy'
+const c_st = '!'
+let d_st = a_st + ' ' + b_st + c_st
+let e_st: string = 'zoom'
+let f_st: 'john' = 'john'
+
+// symbol
+let a_sy = Symbol('a')
+let b_sy: symbol = Symbol('b')
+var c_sy = a_sy === b_sy
+
+// object
+let a_obj1: object = {
+  b: 'x'
+}
+let a_obj2 = {
+  b: 'x'
+}
+let b_obj = {
+  c: {
+    d: 'f'
+  }
+}
+let c_obj: {
+  firstName: string
+  lastName: string
+} = {
+  firstName: 'john',
+  lastName: 'barrowman'
+}
+let a_obj3: {
+  b: number
+  c?: string
+  [key: number]: boolean
+}
+a_obj3 = { b: 1 }
+a_obj3 = { b: 1, c: undefined }
+a_obj3 = { b: 1, c: 'd' }
+a_obj3 = { b: 1, 10: true }
+a_obj3 = { b: 1, 10: true, 20: false }
+
+// type alias
+type Age = number
+
+// union & intersection
+type Cat = { name: string, purrs: boolean }
+type Dog = { name: string, barks: boolean, wags: boolean }
+type CatOrDogOrBoth = Cat | Dog
+type CatAndDog = Cat & Dog
+let a_cat: CatOrDogOrBoth = {
+  name: 'Bonkers',
+  purrs: true
+}
+let a_dog = {
+  name: 'Domino',
+  barks: true,
+  wags: true
+}
