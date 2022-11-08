@@ -98,3 +98,37 @@ let a_dog = {
   barks: true,
   wags: true
 }
+let a_cat_dog = {
+  name: 'Donkers',
+  barks: true,
+  purrs: true,
+  wags: true
+}
+
+// array
+let a_arr = [1, 2, 3]
+var b_arr = ['a', 'b']
+let c_arr: string[] = ['a']
+
+let f_arr = ['red']
+f_arr.push('blue')
+let g_arr = []
+g_arr.push(1)
+g_arr.push('red')
+
+// tuple
+let a_tup: [number] = [1]
+let b_tup: [string, string, number] = ['malcolm', 'gladwell', 1963]
+let frineds: [string, ...string[]] = ['Sara', 'Tali', 'Chloe', 'Claire']
+
+// enum
+enum Language {
+  English,
+  Spanish,
+  Japanese
+}
+enum Language_2 {
+  English = 0,
+  Spanish = 1,
+  Japanes = 2
+}
